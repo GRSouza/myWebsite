@@ -35,20 +35,6 @@ function updateClock() {
         var timeString = formatter.format(now);
         document.getElementById("clock").textContent = timeString;
 }  
-function stickyBoxPosition() {
-    var stickyScrollArea = document.getElementById("experience-left");
-    var stickyAreaPosition = stickyScrollArea.getBoundingClientRect().top;
-    var stickBox = document.getElementById("sticky-box");    
-    var stickyFixedBox = document.getElementById("fixed-sticky-box");
-
-    if (stickyAreaPosition <= 100) {
-        stickyFixedBox.classList.add("display-off");
-        stickBox.classList.remove ("display-off");
-    } else {
-        stickyFixedBox.classList.remove("display-off");
-        stickBox.classList.add ("display-off");
-    }    
-}
 function experienceHover() {
     var expList = document.querySelectorAll(".experience-topic");
     var expBox = document.querySelectorAll(".experience-description-box-content");
@@ -93,9 +79,6 @@ function experienceHover() {
     }
 }
 
-
-
-window.addEventListener("scroll", stickyBoxPosition)
 openMenuButton.addEventListener ("click", showDropdownMenu);
 closeMenuButton.addEventListener ("click", showDropdownMenu);
 menuListButtonMobile[0].addEventListener ("click", showDropdownMenu);
