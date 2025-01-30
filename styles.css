@@ -579,7 +579,7 @@ body{
                 .experience-topic:hover{
                     background-color: rgb(235, 235, 235);
                     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-                    padding: 25px 25px 25px 25px;
+                    padding: 25px;
                     border-bottom: none;
                 }
                 .topic-highlight{
@@ -1411,7 +1411,7 @@ body{
                 }
             }
         }
-
+    }
 
     /* About styling */
     .about-section{
@@ -1456,23 +1456,14 @@ body{
                         .display-off{
                             display: none;
                         }
-                        .expanded {
-                            height: auto; /* Para quando estiver visível */
-                            overflow: hidden; /* Impede conteúdo extra de aparecer durante a animação */
-                            transition: height 0.3s ease-in-out;
-                        }                              
-                        .collapsed {
-                            height: 0;
-                            overflow: hidden;
-                            transition: height 0.3s ease-in-out;
-                        }                     
+
+                  
                     }
                 }
             }
         }
     }
-    }
-}
+}    
 @media (max-width: 600px){
     
     .about-section{
@@ -1482,4 +1473,3 @@ body{
     }
    
 }
-
