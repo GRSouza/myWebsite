@@ -559,6 +559,16 @@ body{
                     border-bottom: solid 1px #e0e0e0;
                     transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 
+                    .experience-topic-title-icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        
+                        .fa-solid{
+                            display: none;
+                            height: fit-content;
+                        }
+                    }
                     .experience-topic-title{
                         width: max-content;
                         margin: 0;
@@ -1445,16 +1455,29 @@ body{
                     width: 100%;
 
                     .experience-topic{
+
+                        .experience-topic-title-icon{
+                            
+                            .fa-solid{
+                                display: flex;
+                            }
+                        }
                         .experience-description-list{
                             display: flex;
                             flex-direction: column;
+                            max-height: 0px;
                             margin-top: 10px;
                             gap: 5px;
                             font-size: 16px;
                             color: #565656;
+                            overflow: hidden;
+                            transition: max-height 0.3s ease;
+
                         }
-                        .display-off{
-                            display: none;
+                        .open{                            
+                            transition: max-height 1.0s ease-in-out;
+                            max-height: 500px;
+                            
                         }
 
                   
