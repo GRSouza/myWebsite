@@ -586,12 +586,6 @@ body{
                         display: none;
                     }
                 }
-                .experience-topic:hover{
-                    background-color: rgb(235, 235, 235);
-                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-                    padding: 25px;
-                    border-bottom: none;
-                }
                 .topic-highlight{
                     border-bottom: solid 1px #6b6b6b;
                 }                
@@ -857,7 +851,24 @@ body{
 }
 
 
+@media (min-width: 880px){
 
+/* About list hover */
+    .experience-section{   
+        .experience-section-container{            
+            .experience-container{                                
+                #experience-list{                     
+                    .experience-topic:hover{
+                        background-color: rgb(235, 235, 235);
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                        padding: 25px;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1320px){   
 
     /* Home styling */
