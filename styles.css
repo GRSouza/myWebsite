@@ -1132,14 +1132,8 @@ body{
         justify-content: space-between;
         .index-button{
             display: flex;
-            align-items: center;
-            gap: 15px;
-            
-            .index-button-line{
-                height: 0px;
-                width: 30px;
-                border-bottom: 1px solid #282828;
-            }
+            align-items: center;    
+
     
             .index-button-text{            
             color:#282828 ;
@@ -1147,7 +1141,7 @@ body{
         }
         #menu-button{
             display: flex;
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
     #dropdown-menu-mask{
@@ -1156,8 +1150,8 @@ body{
         #dropdown-menu{
             top: 0;
             right: 0;
-            width: 70%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             position: fixed;
             background-color: #F5F5F5;
             z-index: 9999;
@@ -1171,7 +1165,7 @@ body{
 
                 #close-menu-button{
                     display: flex;
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }   
             }
 
@@ -1179,7 +1173,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 gap: 60px;                
-                padding: 60px 15px 60px 15px;
+                padding: 60px 25px 60px 25px;
 
                 .dropdown-menu-list-item{
                     display: flex;
@@ -1191,15 +1185,7 @@ body{
                 }
             }
         }
-        .mask{
-            top: 0;
-            height: 100%;
-            width: 100vw;            
-            position: fixed;
-            background-color: black;
-            opacity: 70%;
-            z-index: 9998;
-        }
+
     }
     #dropdown-menu-mask.show{
         display: block;
@@ -1500,6 +1486,8 @@ body{
 }    
 @media (max-width: 600px){
     
+
+
     .about-section{
         .about-section-list{
             flex-direction: column;
