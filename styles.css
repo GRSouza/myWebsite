@@ -668,7 +668,6 @@ body{
             font-weight: 200;
         }
     }
-
 }
 .project-thumbnail:hover .project-thumbnail-intro{
     transform: translateY(-100%);
@@ -1254,6 +1253,17 @@ body{
             }
         }
     }
+
+    
+    /* All Projects styling */
+        .project-thumbnail{
+
+            .project-thumbnail-intro{
+                display: none;
+            }  
+
+        }
+    
 
     /* Project styling */
     .project-title-section{
